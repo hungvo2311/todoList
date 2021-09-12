@@ -35,11 +35,6 @@ const app = (() => {
                     this.render()
                 }
             }
-            else {
-                console.log(finish)
-                document.getElementById("finish").className = "delete btn btn-success"
-                document.getElementById("finish").innerHTML = "Đã hoàn thành"
-            }
         },
         init() {
             submit.onclick = () => {
