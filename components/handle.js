@@ -39,7 +39,7 @@ const app = (() => {
         init() {
             submit.onclick = () => {
                 const work = input.value
-                if(work == null) {
+                if(work == '') {
                     alert("Chưa thêm công việc")
                     input.focus()
                 }
