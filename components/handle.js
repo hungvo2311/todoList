@@ -39,8 +39,14 @@ const app = (() => {
         init() {
             submit.onclick = () => {
                 const work = input.value
-                this.add(work)
-                this.render()
+                if(work == null) {
+                    alert("Chưa thêm công việc")
+                    input.focus()
+                }
+                else {
+                    this.add(work)
+                    this.render()
+                }
 
                 input.value = null
                 input.focus()
